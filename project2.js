@@ -9,7 +9,7 @@ function seleksiBeasiswa(calonIpk) {
     let tidakLulus = 0
     for (let i = 0; i < calonIpk.length; i++)
 
-        if (calonIpk[i].ipk >= 3.5 && calonIpk[i].pendapatanortu >= 5000000) {
+        if (calonIpk[i].ipk >= 3.5 && calonIpk[i].pendapatanortu <= 5000000) {
             console.log(`Status peserta ke ${i+1} : Lulus`)
             lulus += 1
         } else {
